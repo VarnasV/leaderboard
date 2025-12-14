@@ -3,19 +3,29 @@
 import { useState, useEffect } from "react"
 import { LeaderboardPodium } from "@/components/leaderboard-podium"
 import { LeaderboardTable } from "@/components/leaderboard-table"
-import { mockEmployeesThisMonth, mockEmployeesLastMonth } from "@/lib/mock-data"
 import { LogOut } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
 import { ObdelevenLogo } from "@/components/obdeleven-logo"
+import { createClient } from "@/lib/supabase/client"
 
 const SLIDE_DURATION = 15000 // 15 seconds per slide
+
+interface Employee {
+  id: string
+  name: string
+  dvdScore: number
+  avatar: string
+}
 
 export default function LeaderboardPage() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAuthenticated, setIsAuthenticated] = useState(false)
   const [isLoading, setIsLoading] = useState(true)
+  const [employeesThisMonth, setEmployeesThisMonth] = useState<Employee[]>([])
+  const [employeesLastMonth, setEmployeesLastMonth] = useState<Employee[]>([])
   const router = useRouter()
+  const supabase = createClient()
 
   const currentMonth = new Date().toLocaleString('default', { month: 'long' })
   const lastMonth = new Date(new Date().setMonth(new Date().getMonth() - 1)).toLocaleString('default', { month: 'long' })
@@ -24,7 +34,7 @@ export default function LeaderboardPage() {
     {
       component: (
         <LeaderboardPodium 
-          employees={mockEmployeesThisMonth} 
+          employees={employeesThisMonth} 
           title={
             <div className="flex flex-col items-center justify-center">
               <ObdelevenLogo className="h-8 md:h-12 w-auto inline-block mx-3 text-black mb-5" />
@@ -37,7 +47,7 @@ export default function LeaderboardPage() {
     {
       component: (
         <LeaderboardTable 
-          employees={mockEmployeesThisMonth} 
+          employees={employeesThisMonth} 
           title={
             <div className="flex flex-col items-center justify-center mb-10">
             <ObdelevenLogo className="h-8 md:h-12 w-auto inline-block mx-3 text-black mb-5" />
@@ -50,7 +60,7 @@ export default function LeaderboardPage() {
     {
       component: (
         <LeaderboardPodium 
-          employees={mockEmployeesLastMonth} 
+          employees={employeesLastMonth} 
           title={
             <div className="flex flex-col items-center justify-center">
             <ObdelevenLogo className="h-8 md:h-12 w-auto inline-block mx-3 text-black mb-5" />
@@ -63,39 +73,63 @@ export default function LeaderboardPage() {
   ]
 
   useEffect(() => {
-    const checkAuth = async () => {
+    const fetchData = async () => {
       try {
-        const token = localStorage.getItem("auth-token")
-
-        if (!token) {
+        const { data: { user }, error: authError } = await supabase.auth.getUser()
+        
+        if (authError || !user) {
           router.push("/login")
           return
         }
+        
+        setIsAuthenticated(true)
 
-        const response = await fetch("/api/auth/check", {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        })
-        const data = await response.json()
+        // Fetch employees
+        const { data: employees, error: dbError } = await supabase
+          .from('employees')
+          .select('*')
 
-        if (data.authenticated) {
-          setIsAuthenticated(true)
-        } else {
-          localStorage.removeItem("auth-token")
-          router.push("/login")
+        if (dbError) {
+          console.error("Error fetching employees:", dbError)
+          return
         }
+
+        if (employees) {
+          // Map to local interface
+          const formattedEmployeesThisMonth = employees
+            .map(e => ({
+              id: e.id,
+              name: e.name,
+              dvdScore: e.dvd_score || 0,
+              avatar: e.avatar
+            }))
+            .sort((a, b) => b.dvdScore - a.dvdScore)
+
+          setEmployeesThisMonth(formattedEmployeesThisMonth)
+
+          const formattedEmployeesLastMonth = employees
+            .filter(e => e.last_month_dvd_score && e.last_month_dvd_score > 0)
+            .map(e => ({
+              id: e.id,
+              name: e.name,
+              dvdScore: e.last_month_dvd_score || 0,
+              avatar: e.avatar
+            }))
+            .sort((a, b) => b.dvdScore - a.dvdScore)
+
+          setEmployeesLastMonth(formattedEmployeesLastMonth)
+        }
+
       } catch (error) {
-        console.error("Auth check error:", error)
-        localStorage.removeItem("auth-token")
+        console.error("Error:", error)
         router.push("/login")
       } finally {
         setIsLoading(false)
       }
     }
 
-    checkAuth()
-  }, [router])
+    fetchData()
+  }, [router, supabase])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -107,9 +141,9 @@ export default function LeaderboardPage() {
 
   const handleLogout = async () => {
     try {
-      localStorage.removeItem("auth-token")
-      await fetch("/api/auth/logout", { method: "POST" })
+      await supabase.auth.signOut()
       router.push("/login")
+      router.refresh()
     } catch (error) {
       console.error("Logout error:", error)
     }

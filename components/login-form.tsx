@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { useRouter } from "next/navigation"
 import { ChevronDown } from "lucide-react"
+import { createClient } from "@/lib/supabase/client"
 
 export function LoginForm() {
   const [email, setEmail] = useState("")
@@ -15,6 +16,7 @@ export function LoginForm() {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
   const router = useRouter()
+  const supabase = createClient()
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -22,21 +24,16 @@ export function LoginForm() {
     setError("")
 
     try {
-      const response = await fetch("/api/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
+      const { error } = await supabase.auth.signInWithPassword({
+        email,
+        password,
       })
 
-      const data = await response.json()
-
-      if (data.success) {
-        localStorage.setItem("auth-token", data.token)
-        router.push("/leaderboard")
+      if (error) {
+        setError(error.message)
       } else {
-        setError(data.error || "Login failed. Please check your credentials.")
+        router.push("/leaderboard")
+        router.refresh()
       }
     } catch (error) {
       console.error("Login error:", error)
