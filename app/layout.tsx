@@ -1,27 +1,13 @@
 import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/next'
-import { FontLoader } from '@/components/font-loader'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'OBDeleven Leaderboard',
+  description: 'OBDeleven Leaderboard',
   generator: 'v0.app',
   icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
+    icon: '/mascot-3rd.png',
     apple: '/apple-icon.png',
   },
 }
@@ -34,7 +20,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased`} style={{ fontFamily: "'Gilroy', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif" }}>
-        <FontLoader />
         {children}
         <Analytics />
       </body>
