@@ -1,4 +1,4 @@
-import type { Employee } from "@/lib/mock-data"
+import type { Employee } from "@/lib/types"
 import { Trophy } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -65,29 +65,29 @@ export function LeaderboardTable({ employees, title }: LeaderboardTableProps) {
   }
 
   return (
-    <div className="h-full w-full flex flex-col p-4 md:p-6 bg-gray-50 overflow-hidden font-sans">
-      <div className="max-w-[70%] mx-auto w-full flex flex-col h-full">
-        <CardHeader className="text-center pb-4 flex-shrink-0">
-          <CardTitle className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight flex items-center justify-center gap-3 whitespace-nowrap">
+    <div className="h-full w-full flex flex-col p-2 md:p-6 bg-gray-50 overflow-hidden font-sans">
+      <div className="w-full md:max-w-[90%] lg:max-w-[70%] mx-auto flex flex-col h-full">
+        <CardHeader className="text-center pb-2 md:pb-4 flex-shrink-0">
+          <CardTitle className="text-xl md:text-4xl lg:text-5xl font-bold text-gray-900 tracking-tight flex items-center justify-center gap-2 md:gap-3 whitespace-nowrap">
             {title}
           </CardTitle>
         </CardHeader>
 
-        <Card className="overflow-hidden flex-1 flex flex-col min-h-0 shadow-2xl border-0 rounded-3xl bg-white/80 backdrop-blur-sm">
+        <Card className="overflow-hidden flex-1 flex flex-col min-h-0 shadow-2xl border-0 rounded-xl md:rounded-3xl bg-white/80 backdrop-blur-sm">
           <CardContent className="p-0 flex-1 flex flex-col overflow-hidden">
             {/* Header Row */}
-            <div className="flex items-center gap-4 px-5 py-3 border-b border-gray-100 bg-white/50 text-xs font-bold text-gray-400 uppercase tracking-wider">
-              <div className="w-16 text-center">Rank</div>
+            <div className="flex items-center gap-2 md:gap-4 px-3 md:px-5 py-2 md:py-3 border-b border-gray-100 bg-white/50 text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-wider">
+              <div className="w-8 md:w-16 text-center">Rank</div>
               <div className="flex-1 pl-2">Employee</div>
               <div className="text-right pr-2">DVD</div>
             </div>
 
-            <div className="flex-1 overflow-y-auto scrollbar-hide p-2 space-y-2">
+            <div className="flex-1 overflow-y-auto scrollbar-hide p-1 md:p-2 space-y-1 md:space-y-2">
               {employees.map((employee, index) => (
                 <div 
                   key={employee.id}
                   className={`
-                    group flex items-center gap-4 p-4 rounded-xl transition-all duration-300 
+                    group flex items-center gap-2 md:gap-4 p-2 md:p-4 rounded-lg md:rounded-xl transition-all duration-300 
                     animate-in fade-in slide-in-from-bottom-2
                     ${getRowStyle(index + 1)}
                     ${index < 3 ? 'shadow-sm bg-white' : ''}
@@ -95,27 +95,31 @@ export function LeaderboardTable({ employees, title }: LeaderboardTableProps) {
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
                   {/* Rank Section */}
-                  <div className="flex items-center justify-center w-16 gap-2">
-                    <span className={`text-2xl font-bold ${index < 3 ? 'scale-110' : 'text-gray-400'}`} style={{
+                  <div className="flex items-center justify-center w-8 md:w-16 gap-1 md:gap-2">
+                    <span className={`text-base md:text-2xl font-bold ${index < 3 ? 'scale-110' : 'text-gray-400'}`} style={{
                       color: index === 0 ? colors.gold : index === 1 ? colors.blue : index === 2 ? colors.dark : ''
                     }}>
                       {index + 1}
                     </span>
-                    {index < 3 && getRankIcon(index + 1)}
+                    {index < 3 && (
+                      <div className="hidden md:block">
+                        {getRankIcon(index + 1)}
+                      </div>
+                    )}
                   </div>
 
                   {/* Avatar & Name */}
-                  <div className="flex items-center gap-4 flex-1 min-w-0">
+                  <div className="flex items-center gap-2 md:gap-4 flex-1 min-w-0">
                     <div className="relative">
                       {index === 0 && <div className="absolute inset-0 bg-[#FFB100]/30 blur-lg rounded-full" />}
                       {index === 1 && <div className="absolute inset-0 bg-[#004EFF]/30 blur-lg rounded-full" />}
                       <Avatar className={`
-                        w-12 h-12 border-2 relative z-10
+                        w-8 h-8 md:w-12 md:h-12 border-2 relative z-10
                         ${index === 0 ? 'border-[#FFB100]' : index === 1 ? 'border-[#004EFF]' : index === 2 ? 'border-gray-900' : 'border-gray-100'}
                       `}>
                         <AvatarImage src={employee.avatar} alt={employee.name} />
                         <AvatarFallback className={`
-                          font-bold text-lg
+                          font-bold text-xs md:text-lg
                           ${index === 0 ? 'bg-[#FFB100] text-black' : index === 1 ? 'bg-[#004EFF] text-white' : index === 2 ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-500'}
                         `}>
                           {employee.name.charAt(0)}
@@ -124,15 +128,15 @@ export function LeaderboardTable({ employees, title }: LeaderboardTableProps) {
                     </div>
                     
                     <div className="flex flex-col min-w-0 justify-center">
-                      <span className="text-lg font-bold text-gray-900 truncate group-hover:text-[#004EFF] transition-colors">
+                      <span className="text-sm md:text-lg font-bold text-gray-900 truncate group-hover:text-[#004EFF] transition-colors">
                         {employee.name}
                       </span>
                     </div>
                   </div>
 
                   {/* Score */}
-                  <div className="text-right pr-4">
-                    <div className="text-2xl font-bold text-gray-900 tracking-tight">
+                  <div className="text-right pr-2 md:pr-4">
+                    <div className="text-sm md:text-2xl font-bold text-gray-900 tracking-tight">
                       {employee.dvdScore.toLocaleString()}
                     </div>
                   </div>

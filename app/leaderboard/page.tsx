@@ -8,15 +8,9 @@ import { Button } from "@/components/ui/button"
 import { useRouter } from "next/navigation"
 import { ObdelevenLogo } from "@/components/obdeleven-logo"
 import { createClient } from "@/lib/supabase/client"
+import { Employee } from "@/lib/types"
 
 const SLIDE_DURATION = 15000 // 15 seconds per slide
-
-interface Employee {
-  id: string
-  name: string
-  dvdScore: number
-  avatar: string
-}
 
 export default function LeaderboardPage() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -36,9 +30,9 @@ export default function LeaderboardPage() {
         <LeaderboardPodium 
           employees={employeesThisMonth} 
           title={
-            <div className="flex flex-col items-center justify-center mb-10">
-              <ObdelevenLogo className="h-8 md:h-12 w-auto inline-block mx-3 text-black mb-5" />
-              Top 3 App Users  {currentMonth}
+            <div className="flex flex-col items-center justify-center mb-4 md:mb-10">
+              <ObdelevenLogo className="h-6 md:h-12 w-auto inline-block mx-3 text-black mb-2 md:mb-5" />
+              <span className="text-center">Top 3 App Users {currentMonth}</span>
             </div>
           } 
         />
@@ -49,9 +43,9 @@ export default function LeaderboardPage() {
         <LeaderboardTable 
           employees={employeesThisMonth} 
           title={
-            <div className="flex flex-col items-center justify-center mb-10">
-            <ObdelevenLogo className="h-8 md:h-12 w-auto inline-block mx-3 text-black mb-5" />
-              App Users Leaderboard ({currentMonth})
+            <div className="flex flex-col items-center justify-center mb-4 md:mb-10 mt-6 md:mt-0">
+            <ObdelevenLogo className="h-6 md:h-12 w-auto inline-block mx-3 text-black mb-2 md:mb-5" />
+              <span className="text-center">App Users Leaderboard ({currentMonth})</span>
             </div>
           } 
         />
@@ -62,9 +56,9 @@ export default function LeaderboardPage() {
         <LeaderboardPodium 
           employees={employeesLastMonth} 
           title={
-            <div className="flex flex-col items-center justify-center mb-10">
-            <ObdelevenLogo className="h-8 md:h-12 w-auto inline-block mx-3 text-black mb-5" />
-            Top 3 App Users  {lastMonth}
+            <div className="flex flex-col items-center justify-center mb-4 md:mb-10">
+            <ObdelevenLogo className="h-6 md:h-12 w-auto inline-block mx-3 text-black mb-2 md:mb-5" />
+            <span className="text-center">Top 3 App Users {lastMonth}</span>
           </div>
           } 
         />
