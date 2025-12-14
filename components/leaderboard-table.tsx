@@ -1,7 +1,7 @@
 import type { Employee } from "@/lib/mock-data"
 import { Trophy } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Image from "next/image"
 
 interface LeaderboardTableProps {
@@ -113,11 +113,12 @@ export function LeaderboardTable({ employees, title }: LeaderboardTableProps) {
                         w-12 h-12 border-2 relative z-10
                         ${index === 0 ? 'border-[#FFB100]' : index === 1 ? 'border-[#004EFF]' : index === 2 ? 'border-gray-900' : 'border-gray-100'}
                       `}>
+                        <AvatarImage src={employee.avatar} alt={employee.name} />
                         <AvatarFallback className={`
                           font-bold text-lg
                           ${index === 0 ? 'bg-[#FFB100] text-black' : index === 1 ? 'bg-[#004EFF] text-white' : index === 2 ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-500'}
                         `}>
-                          {employee.avatar}
+                          {employee.name.charAt(0)}
                         </AvatarFallback>
                       </Avatar>
                     </div>

@@ -1890,6 +1890,16 @@
     }
   }
 
+  .bg-gray-900\/30 {
+    background-color: #1018284d;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-gray-900\/30 {
+      background-color: color-mix(in oklab, var(--color-gray-900) 30%, transparent);
+    }
+  }
+
   .bg-input {
     background-color: var(--input);
   }
@@ -2621,6 +2631,16 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
 
+  .ring-\[\#004EFF\]\/20 {
+    --tw-ring-color: #004eff33;
+  }
+
+  @supports (color: lab(0% 0 0)) {
+    .ring-\[\#004EFF\]\/20 {
+      --tw-ring-color: lab(40.4487% 38.3715 -93.9261 / .2);
+    }
+  }
+
   .ring-\[\#FFB100\]\/20 {
     --tw-ring-color: #ffb10033;
   }
@@ -2628,6 +2648,16 @@
   @supports (color: lab(0% 0 0)) {
     .ring-\[\#FFB100\]\/20 {
       --tw-ring-color: lab(78.3261% 21.5569 80.7567 / .2);
+    }
+  }
+
+  .ring-gray-900\/20 {
+    --tw-ring-color: #10182833;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .ring-gray-900\/20 {
+      --tw-ring-color: color-mix(in oklab, var(--color-gray-900) 20%, transparent);
     }
   }
 

@@ -1,7 +1,7 @@
 import type { Employee } from "@/lib/mock-data"
 import { Trophy } from "lucide-react"
 import { CardHeader, CardTitle } from "@/components/ui/card"
-import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import Image from "next/image"
 
 interface LeaderboardPodiumProps {
@@ -31,10 +31,11 @@ export function LeaderboardPodium({ employees, title }: LeaderboardPodiumProps) 
             <div className="flex flex-col items-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150 relative z-10">
               {/* Profile Image */}
               <div className="flex justify-center mb-4 relative">
-                <div className="absolute inset-0 rounded-full bg-[#004EFF]/20 blur-xl"></div>
-                <Avatar className="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-4 border-white shadow-xl relative z-10">
+                <div className="absolute inset-0 rounded-full bg-[#004EFF]/30 blur-2xl"></div>
+                <Avatar className="w-24 h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 rounded-full border-4 border-white shadow-xl relative z-10 ring-4 ring-[#004EFF]/20">
+                  <AvatarImage src={top3[1].avatar} alt={top3[1].name} />
                   <AvatarFallback className="text-3xl font-bold text-white bg-[#004EFF]">
-                    {top3[1].avatar}
+                    {top3[1].name.charAt(0)}
                   </AvatarFallback>
                 </Avatar>
               </div>
@@ -78,8 +79,9 @@ export function LeaderboardPodium({ employees, title }: LeaderboardPodiumProps) 
               <div className="flex justify-center mb-4 relative">
                 <div className="absolute inset-0 rounded-full bg-[#FFB100]/30 blur-2xl"></div>
                 <Avatar className="w-32 h-32 md:w-40 md:h-40 lg:w-44 lg:h-44 rounded-full border-4 border-white shadow-2xl relative z-10 ring-4 ring-[#FFB100]/20">
+                  <AvatarImage src={top3[0].avatar} alt={top3[0].name} />
                   <AvatarFallback className="text-4xl lg:text-5xl font-bold text-black bg-[#FFB100]">
-                    {top3[0].avatar}
+                    {top3[0].name.charAt(0)}
                   </AvatarFallback>
                 </Avatar>
               </div>
@@ -121,10 +123,11 @@ export function LeaderboardPodium({ employees, title }: LeaderboardPodiumProps) 
             <div className="flex flex-col items-center animate-in fade-in slide-in-from-bottom-4 duration-700 delay-300 relative z-10">
               {/* Profile Image */}
               <div className="flex justify-center mb-4 relative">
-                <div className="absolute inset-0 rounded-full bg-gray-900/10 blur-xl"></div>
-                <Avatar className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full border-4 border-white shadow-xl relative z-10">
+                <div className="absolute inset-0 rounded-full bg-gray-900/30 blur-2xl"></div>
+                <Avatar className="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full border-4 border-white shadow-xl relative z-10 ring-4 ring-gray-900/20">
+                  <AvatarImage src={top3[2].avatar} alt={top3[2].name} />
                   <AvatarFallback className="text-2xl md:text-3xl lg:text-4xl font-bold text-white bg-gray-900">
-                    {top3[2].avatar}
+                    {top3[2].name.charAt(0)}
                   </AvatarFallback>
                 </Avatar>
               </div>

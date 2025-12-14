@@ -199,3 +199,178 @@ It can also happen if the client has a browser extension installed which messes 
 [00:13:22.244] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739173095}
 [00:13:56.493] Server  LOG      ✓ Compiled in 36ms
 [00:15:48.975] Server  LOG      ✓ Compiled in 23ms
+[00:19:20.696] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:19:20.857] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:19:20.857] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:19:20.857] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739531750}
+[00:20:51.777] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:20:51.920] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:20:51.920] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:20:51.920] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739622813}
+[00:21:01.415] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:01.559] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:21:01.559] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:21:01.559] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739632448}
+[00:21:54.861] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:21:54.992] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:21:54.992] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:21:54.992] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739685885}
+[00:22:50.224] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:22:50.379] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:22:50.379] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:22:50.379] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739741272}
+[00:25:47.793] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:47.964] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:25:47.964] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:25:47.964] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739918833}
+[00:25:49.919] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:25:50.073] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:25:50.073] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:25:50.073] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739920942}
+[00:26:00.960] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:01.117] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:01.117] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:26:01.117] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739931986}
+[00:26:49.296] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:49.442] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:49.442] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:26:49.442] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739980312}
+[00:26:50.636] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:50.785] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:50.785] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:26:50.785] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739981655}
+[00:26:51.921] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:52.076] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:52.076] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:26:52.076] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739982946}
+[00:26:53.102] Server  LOG      ✓ Compiled in 39ms
+[00:26:53.182] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:26:56.961] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:57.124] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:57.124] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:26:57.124] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739987987}
+[00:26:57.307] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:26:58.481] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:58.640] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:26:58.640] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:26:58.640] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739989510}
+[00:26:58.824] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:26:59.928] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:00.080] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:00.080] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:00.080] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739990951}
+[00:27:00.263] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:00.413] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:27:00.439] Server  LOG      ✓ Compiled in 27ms
+[00:27:00.970] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:01.126] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:01.126] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:01.127] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739991996}
+[00:27:01.333] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:02.336] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:02.499] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:02.499] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:02.499] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739993362}
+[00:27:02.694] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:04.044] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:04.198] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:04.198] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:04.198] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739995069}
+[00:27:04.393] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:05.305] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:05.469] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:05.469] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:05.469] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739996332}
+[00:27:05.646] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:06.369] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:06.526] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:06.526] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:06.526] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739997396}
+[00:27:06.728] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:07.560] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:07.713] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:07.713] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:07.713] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739998566}
+[00:27:07.876] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:08.327] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:08.481] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:08.481] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:08.481] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765739999352}
+[00:27:08.584] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:09.054] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:09.193] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:09.193] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:09.193] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740000064}
+[00:27:09.308] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:09.815] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:09.932] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:09.932] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:09.932] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740000802}
+[00:27:10.169] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:10.514] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:10.581] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:10.581] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:10.581] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740001538}
+[00:27:11.044] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:11.170] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:11.170] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:11.170] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740002056}
+[00:27:11.702] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:11.839] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:11.839] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:11.840] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740002710}
+[00:27:12.031] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:12.615] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:12.771] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:12.771] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:12.771] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740003634}
+[00:27:12.963] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:13.866] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:14.027] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:14.028] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:14.028] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740004891}
+[00:27:14.211] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:16.188] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:16.328] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:16.328] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:16.328] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740007197}
+[00:27:16.527] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:17.591] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:17.746] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:17.746] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:17.746] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740008617}
+[00:27:17.970] Browser ERROR   uncaughtError: ReferenceError: AvatarImage is not defined
+[00:27:18.207] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:27:18.232] Server  LOG      ✓ Compiled in 61ms
+[00:27:18.781] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:18.919] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:18.919] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:18.919] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740009789}
+[00:27:21.217] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:21.369] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:21.369] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:21.369] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740012239}
+[00:27:30.418] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:30.552] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:30.552] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:30.552] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740021423}
+[00:27:35.182] Server  LOG      ✓ Compiled in 27ms
+[00:27:39.548] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:27:39.704] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:27:39.704] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:27:39.704] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740030573}
+[00:28:52.562] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:28:52.721] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:28:52.721] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:28:52.721] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740103591}
+[00:29:50.704] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:29:50.866] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:29:50.866] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:29:50.866] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740161733}
+[00:31:38.034] Server  LOG      ✓ Compiled in 74ms
+[00:31:44.766] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:31:44.928] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:31:44.929] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/leaderboard","route":"/leaderboard"}
+[00:31:44.929] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/leaderboard color: rgb(120, 120, 120) color: inherit {"dp":"/leaderboard","o":"http://localhost:3000/leaderboard","sdkn":"@vercel/analytics/next","sdkv":"1.3.1","sv":"0.1.3","ts":1765740275799}
+[00:31:45.410] Server  LOG      ✓ Compiled in 68ms
+[00:33:16.456] Server  LOG      ✓ Compiled in 32ms

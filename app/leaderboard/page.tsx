@@ -36,7 +36,7 @@ export default function LeaderboardPage() {
         <LeaderboardPodium 
           employees={employeesThisMonth} 
           title={
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center mb-10">
               <ObdelevenLogo className="h-8 md:h-12 w-auto inline-block mx-3 text-black mb-5" />
               Top 3 App Users  {currentMonth}
             </div>
@@ -62,7 +62,7 @@ export default function LeaderboardPage() {
         <LeaderboardPodium 
           employees={employeesLastMonth} 
           title={
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center mb-10">
             <ObdelevenLogo className="h-8 md:h-12 w-auto inline-block mx-3 text-black mb-5" />
             Top 3 App Users  {lastMonth}
           </div>
