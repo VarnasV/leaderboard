@@ -20,7 +20,7 @@ export function LeaderboardTable({ employees, title }: LeaderboardTableProps) {
   const getRankIcon = (rank: number) => {
     if (rank === 1) {
       return (
-        <div className="relative w-8 h-8">
+        <div className="relative w-5 h-5 md:w-8 md:h-8">
           <Image 
             src="/mascot-1st.png" 
             alt="1st Place" 
@@ -32,7 +32,7 @@ export function LeaderboardTable({ employees, title }: LeaderboardTableProps) {
     }
     if (rank === 2) {
       return (
-        <div className="relative w-7 h-7">
+        <div className="relative w-4 h-4 md:w-7 md:h-7">
           <Image 
             src="/mascot-2nd.png" 
             alt="2nd Place" 
@@ -44,7 +44,7 @@ export function LeaderboardTable({ employees, title }: LeaderboardTableProps) {
     }
     if (rank === 3) {
       return (
-        <div className="relative w-6 h-6">
+        <div className="relative w-3.5 h-3.5 md:w-6 md:h-6">
           <Image 
             src="/mascot-3rd.png" 
             alt="3rd Place" 
@@ -77,7 +77,7 @@ export function LeaderboardTable({ employees, title }: LeaderboardTableProps) {
           <CardContent className="p-0 flex-1 flex flex-col overflow-hidden">
             {/* Header Row */}
             <div className="flex items-center gap-2 md:gap-4 px-3 md:px-5 py-2 md:py-3 border-b border-gray-100 bg-white/50 text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-wider">
-              <div className="w-8 md:w-16 text-center">Rank</div>
+              <div className="w-12 md:w-16 text-center">Rank</div>
               <div className="flex-1 pl-2">Employee</div>
               <div className="text-right pr-2">DVD</div>
             </div>
@@ -95,14 +95,14 @@ export function LeaderboardTable({ employees, title }: LeaderboardTableProps) {
                   style={{ animationDelay: `${index * 50}ms` }}
                 >
                   {/* Rank Section */}
-                  <div className="flex items-center justify-center w-8 md:w-16 gap-1 md:gap-2">
+                  <div className="flex items-center justify-center w-12 md:w-16 gap-1 md:gap-2">
                     <span className={`text-base md:text-2xl font-bold ${index < 3 ? 'scale-110' : 'text-gray-400'}`} style={{
                       color: index === 0 ? colors.gold : index === 1 ? colors.blue : index === 2 ? colors.dark : ''
                     }}>
                       {index + 1}
                     </span>
                     {index < 3 && (
-                      <div className="hidden md:block">
+                      <div className="block">
                         {getRankIcon(index + 1)}
                       </div>
                     )}
