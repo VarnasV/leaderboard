@@ -41,7 +41,7 @@ export function LeaderboardPodium({ employees, title }: LeaderboardPodiumProps) 
               </div>
               
               {/* Name */}
-              <h3 className="text-lg md:text-2xl font-bold text-gray-900 text-center mb-2 md:mb-6 truncate max-w-[300px] md:max-w-[200px]">
+              <h3 className="text-lg md:text-2xl font-bold text-gray-900 text-center mb-2 md:mb-6 truncate max-w-[300px] md:max-w-none md:overflow-visible md:whitespace-normal">
                 {top3[1].name}
               </h3>
               
@@ -135,7 +135,7 @@ export function LeaderboardPodium({ employees, title }: LeaderboardPodiumProps) 
               </div>
               
               {/* Name */}
-              <h3 className="text-lg md:text-2xl font-bold text-gray-900 text-center mb-2 md:mb-6 truncate max-w-[300px] md:max-w-[200px]">
+              <h3 className="text-lg md:text-2xl font-bold text-gray-900 text-center mb-2 md:mb-6 truncate max-w-[300px] md:max-w-none md:overflow-visible md:whitespace-normal">
                 {top3[2].name}
               </h3>
               
