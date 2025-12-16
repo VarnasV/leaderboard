@@ -2,6 +2,7 @@
 
 import { LoginForm } from "@/components/login-form"
 import Image from "next/image"
+import { Suspense } from "react"
 
 export default function LoginPage() {
   return (
@@ -15,7 +16,9 @@ export default function LoginPage() {
               <p className="text-gray-600 text-sm md:text-lg">Login to your Employee Leaderboard account</p>
             </div>
 
-            <LoginForm />
+            <Suspense fallback={<div>Loading...</div>}>
+              <LoginForm />
+            </Suspense>
           </div>
         </div>
 

@@ -2,11 +2,11 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { useRouter } from "next/navigation"
+import { useRouter, useSearchParams } from "next/navigation"
 import { ChevronDown } from "lucide-react"
 import { createClient } from "@/lib/supabase/client"
 
@@ -16,17 +16,17 @@ export function LoginForm() {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState("")
   const router = useRouter()
+  const searchParams = useSearchParams()
   const supabase = createClient()
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault()
+  const handleLogin = async (emailParam: string, passwordParam: string) => {
     setIsLoading(true)
     setError("")
 
     try {
       const { error } = await supabase.auth.signInWithPassword({
-        email,
-        password,
+        email: emailParam,
+        password: passwordParam,
       })
 
       if (error) {
@@ -42,6 +42,23 @@ export function LoginForm() {
       setIsLoading(false)
     }
   }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    await handleLogin(email, password)
+  }
+
+  // Auto-login if credentials are passed in URL
+  useEffect(() => {
+    const urlEmail = searchParams.get('email')
+    const urlPassword = searchParams.get('password')
+    
+    if (urlEmail && urlPassword) {
+      setEmail(urlEmail)
+      setPassword(urlPassword)
+      handleLogin(urlEmail, urlPassword)
+    }
+  }, [searchParams])
 
   return (
     <div className="w-full space-y-6">
