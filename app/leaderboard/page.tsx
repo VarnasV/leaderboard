@@ -69,25 +69,14 @@ export default function LeaderboardPage() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        // Check if IP allowlist bypass cookie is set
-        const bypassCookie = document.cookie
-          .split('; ')
-          .find(row => row.startsWith('ip-allowlist-bypass='))
-          ?.split('=')[1]
+        const { data: { user }, error: authError } = await supabase.auth.getUser()
         
-        if (bypassCookie === 'true') {
-          console.log('[Leaderboard] IP allowlist bypass active')
-          setIsAuthenticated(true)
-        } else {
-          const { data: { user }, error: authError } = await supabase.auth.getUser()
-          
-          if (authError || !user) {
-            router.push("/login")
-            return
-          }
-          
-          setIsAuthenticated(true)
+        if (authError || !user) {
+          router.push("/login")
+          return
         }
+        
+        setIsAuthenticated(true)
 
         // Fetch employees
         const { data: employees, error: dbError } = await supabase
