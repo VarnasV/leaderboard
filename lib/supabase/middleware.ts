@@ -2,6 +2,36 @@ import { createServerClient } from '@supabase/ssr'
 import { NextResponse, type NextRequest } from 'next/server'
 
 export async function updateSession(request: NextRequest) {
+  // Allowlisted IPs - defined once at the top
+  const allowedIps = ['85.206.20.170', '::1', '127.0.0.1']
+  
+  // Check if request is from allowlisted IP - bypass auth completely
+  const forwardedFor = request.headers.get('x-forwarded-for')
+  const realIp = request.headers.get('x-real-ip')
+  const clientIp = forwardedFor?.split(',')[0]?.trim() || realIp || null
+  
+  // If from allowed IP, bypass authentication
+  if (clientIp && allowedIps.includes(clientIp)) {
+    // Redirect root and login to leaderboard
+    if (request.nextUrl.pathname === '/' || request.nextUrl.pathname === '/login') {
+      const url = request.nextUrl.clone()
+      url.pathname = '/leaderboard'
+      const response = NextResponse.redirect(url)
+      response.cookies.set('ip-allowlist-bypass', 'true', { 
+        httpOnly: false,
+        maxAge: 60 * 60 * 24 * 365,
+      })
+      return response
+    }
+    // Allow access to any other page
+    const response = NextResponse.next({ request })
+    response.cookies.set('ip-allowlist-bypass', 'true', { 
+      httpOnly: false,
+      maxAge: 60 * 60 * 24 * 365,
+    })
+    return response
+  }
+
   let supabaseResponse = NextResponse.next({
     request,
   })
@@ -40,35 +70,23 @@ export async function updateSession(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser()
 
+  // If no user and not on login/auth pages, redirect to login
   if (
     !user &&
     !request.nextUrl.pathname.startsWith('/login') &&
     !request.nextUrl.pathname.startsWith('/auth')
   ) {
-    // no user, potentially respond by redirecting the user to the login page
     const url = request.nextUrl.clone()
     url.pathname = '/login'
     return NextResponse.redirect(url)
   }
 
+  // If authenticated and on login page, redirect to leaderboard
   if (user && request.nextUrl.pathname.startsWith('/login')) {
     const url = request.nextUrl.clone()
     url.pathname = '/leaderboard'
     return NextResponse.redirect(url)
   }
-
-  // IMPORTANT: You *must* return the supabaseResponse object as it is. If you're
-  // creating a new Response object with NextResponse.next() make sure to:
-  // 1. Pass the request in it, like so:
-  //    const myNewResponse = NextResponse.next({ request })
-  // 2. Copy over the cookies, like so:
-  //    myNewResponse.cookies.setAll(supabaseResponse.cookies.getAll())
-  // 3. Change the myNewResponse object to fit your needs, but avoid changing
-  //    the cookies!
-  // 4. Finally:
-  //    return myNewResponse
-  // If this is not done, you may be causing the browser and server to go out
-  // of sync and terminate the user's session prematurely!
 
   return supabaseResponse
 }
